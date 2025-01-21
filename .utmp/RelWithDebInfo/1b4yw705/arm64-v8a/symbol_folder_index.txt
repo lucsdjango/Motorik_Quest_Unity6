@@ -1,0 +1,1 @@
+C:\Users\plust\Documents\UnityProjects\Motorik_Quest_Unity6\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\cxx\RelWithDebInfo\1b4yw705\obj\arm64-v8a
