@@ -62,7 +62,7 @@ public class QuestLogger : MonoBehaviour
         right = GameObject.Find("RightHandAnchor").transform;
         headCam = GameObject.FindWithTag("MainCamera").GetComponent<Camera>();
 
-        OVRPlugin.systemDisplayFrequency = 120.0f;
+        OVRPlugin.systemDisplayFrequency = 90.0f;
 
     }
 
@@ -110,7 +110,7 @@ public class QuestLogger : MonoBehaviour
 
         //ovrManager.isInsightPassthroughEnabled = false;
 
-        //Invoke("StartLogging", 5f);
+        Invoke("StartLogging", 2f);
 
     }
 
@@ -222,13 +222,13 @@ public class QuestLogger : MonoBehaviour
             
             }
 
-            
+            /*
             if (qtmlr.HasReceivedStop())
             {
                 StopLogging();
                 //Application.Quit();
             }
-            
+            */
 
 
         } else
@@ -338,7 +338,8 @@ public class QuestLogger : MonoBehaviour
 
 
         //logger.StartLogging((++logFiles).ToString("D")+"Log", t);
-        logger.StartLogging(QTMListener.fileName, t);
+        //logger.StartLogging(QTMListener.fileName, t);
+        logger.StartLogging("Test", t);
         BlankIt();
         
     }
